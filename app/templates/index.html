@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>30 Days 30 Recipes with Khairul Ameng</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <img class="ka-icon" src="/static/img/khairul-ameng.jpg" alt="Khairul Aming"
+           loading="lazy"
+           onerror="this.style.display='none'; document.getElementById('kaFallback').style.display='grid';" />
+      <div class="ka-fallback" id="kaFallback" style="display:none;">KA</div>
+
+      <div class="top-text">
+        <h1>30 Days • 30 Recipes <span class="with-ka">by Khairul Ameng</span></h1>
+        <p>Hey Waddap Guys!</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="grid">
+    {% for item in days %}
+      <section class="card {% if item.day == 30 %}locked{% endif %}" data-day="{{ item.day }}">
+        {% if item.day == 30 %}
+          <div class="lock-overlay" aria-hidden="true">
+            <div class="lock-box">
+              <strong>LOCKED</strong>
+              <p>Khairul Ameng never released this recipe.</p>
+            </div>
+          </div>
+        {% endif %}
+
+        <div class="thumb">
+          <img
+            src="{{ item.img }}"
+            alt="Recipe image for Day {{ item.day }}"
+            loading="lazy"
+          />
+          <div class="day-pill">Day {{ item.day }}</div>
+        </div>
+
+        <h3 class="title">{{ item.title }}</h3>
+        <p class="desc">{{ item.desc }}</p>
+
+        <button class="view-btn" type="button" data-view="{{ item.day }}">View recipe</button>
+
+        <div class="result" id="result-{{ item.day }}"></div>
+      </section>
+    {% endfor %}
+  </main>
+
+  <footer class="foot">
+    <small>© 2026 Khairul Ameng</small>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
