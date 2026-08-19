@@ -1,0 +1,14 @@
+{
+  "name": "divide-ctf-recipe",
+  "version": "1.0.0",
+  "description": "30 Days 30 Recipes CTF challenge deployed on Cloudflare Pages",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler pages dev ./public",
+    "deploy": "wrangler pages deploy ./public",
+    "build": "python3 scripts/build_index.py"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

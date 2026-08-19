@@ -1,2 +1,4 @@
+# Local Python (Flask) dev only — used by the optional Dockerfile.
+# Cloudflare Pages does NOT install these; the Pages Function is JavaScript.
 flask==3.0.3
 gunicorn==22.0.0

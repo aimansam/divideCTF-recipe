@@ -1,0 +1,7 @@
+# Cloudflare Pages redirects
+# https://developers.cloudflare.com/pages/configuration/redirects/
+
+# No redirects configured.
+# Examples (uncomment if needed):
+# /recipe/<day>  /api/recipe/<day>  200
+# /old-page      /new-page          301

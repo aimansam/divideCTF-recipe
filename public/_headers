@@ -1,0 +1,16 @@
+# Cloudflare Pages headers
+# https://developers.cloudflare.com/pages/configuration/headers/
+# Rules are matched in order; first match wins for any given header.
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Images get long-lived immutable cache (large files, content never changes).
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Other static assets (CSS, JS) ride the same immutable cache for simplicity.
+

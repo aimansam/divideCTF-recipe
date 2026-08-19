@@ -1,0 +1,155 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: #0b0c10;
+  color: #eaf0ff;
+}
+
+.top {
+  padding: 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.top-inner{
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.ka-icon{
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.06);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+.ka-fallback{
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.08);
+}
+
+.top-text h1{
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.with-ka{
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.top-text p{
+  margin: 6px 0 0;
+  opacity: 0.85;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  padding: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+  position: relative;
+  padding: 16px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+  min-height: 260px;
+  overflow: hidden;
+}
+
+.thumb{
+  position: relative;
+  height: 140px;
+  margin: -16px -16px 12px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.03);
+}
+
+.thumb img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: rgba(255,255,255,0.03);
+}
+
+.day-pill{
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 0.85rem;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(0,0,0,0.30);
+  backdrop-filter: blur(8px);
+}
+
+.title { margin: 8px 0 6px; font-size: 1.05rem; }
+.desc { margin: 0 0 12px; opacity: 0.9; line-height: 1.35; }
+
+.view-btn {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.08);
+  color: #eaf0ff;
+  cursor: pointer;
+}
+
+.view-btn:hover{
+  background: rgba(255,255,255,0.12);
+}
+
+.result {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(255,255,255,0.18);
+  white-space: pre-wrap;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.9rem;
+  opacity: 0.95;
+}
+
+/* THE “LOCK” (client-side only) */
+.locked .view-btn {
+  pointer-events: none;   /* player removes/edits this to click */
+  opacity: 0.35;
+}
+
+/* overlay */
+.lock-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(0,0,0,0.55);
+  border-radius: 14px;
+  z-index: 5;
+}
+
+.lock-box {
+  text-align: center;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(20,20,30,0.8);
+}
+
+.foot { padding: 18px 24px; opacity: 0.8; }

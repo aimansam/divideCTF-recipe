@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>30 Days 30 Recipes with Khairul Ameng</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <img class="ka-icon" src="/static/img/khairul-ameng.jpg" alt="Khairul Aming"
+           loading="lazy"
+           onerror="this.style.display='none'; document.getElementById('kaFallback').style.display='grid';" />
+      <div class="ka-fallback" id="kaFallback" style="display:none;">KA</div>
+
+      <div class="top-text">
+        <h1>30 Days &bull; 30 Recipes <span class="with-ka">by Khairul Ameng</span></h1>
+        <p>Hey Waddap Guys!</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="grid">
+      <section class="card" data-day="1">
+        <div class="thumb">
+          <img src="/static/img/1.jpg" alt="Recipe image for Day 1" loading="lazy" />
+          <div class="day-pill">Day 1</div>
+        </div>
+        <h3 class="title">Spicy Garlic Noodles</h3>
+        <p class="desc">Quick wok-tossed noodles with garlic and chili.</p>
+        <button class="view-btn" type="button" data-view="1">View recipe</button>
+        <div class="result" id="result-1"></div>
+      </section>
+      <section class="card" data-day="2">
+        <div class="thumb">
+          <img src="/static/img/2.jpg" alt="Recipe image for Day 2" loading="lazy" />
+          <div class="day-pill">Day 2</div>
+        </div>
+        <h3 class="title">Lemongrass Chicken</h3>
+        <p class="desc">Grilled chicken with lemongrass marinade.</p>
+        <button class="view-btn" type="button" data-view="2">View recipe</button>
+        <div class="result" id="result-2"></div>
+      </section>
+      <section class="card" data-day="3">
+        <div class="thumb">
+          <img src="/static/img/3.jpg" alt="Recipe image for Day 3" loading="lazy" />
+          <div class="day-pill">Day 3</div>
+        </div>
+        <h3 class="title">Sambal Fried Rice</h3>
+        <p class="desc">Nasi goreng with sambal kick.</p>
+        <button class="view-btn" type="button" data-view="3">View recipe</button>
+        <div class="result" id="result-3"></div>
+      </section>
+      <section class="card" data-day="4">
+        <div class="thumb">
+          <img src="/static/img/4.jpg" alt="Recipe image for Day 4" loading="lazy" />
+          <div class="day-pill">Day 4</div>
+        </div>
+        <h3 class="title">Coconut Curry Soup</h3>
+        <p class="desc">Creamy coconut broth with veggies.</p>
+        <button class="view-btn" type="button" data-view="4">View recipe</button>
+        <div class="result" id="result-4"></div>
+      </section>
+      <section class="card" data-day="5">
+        <div class="thumb">
+          <img src="/static/img/5.jpg" alt="Recipe image for Day 5" loading="lazy" />
+          <div class="day-pill">Day 5</div>
+        </div>
+        <h3 class="title">Honey Soy Salmon</h3>
+        <p class="desc">Sweet-salty glaze, oven roasted.</p>
+        <button class="view-btn" type="button" data-view="5">View recipe</button>
+        <div class="result" id="result-5"></div>
+      </section>
+      <section class="card" data-day="6">
+        <div class="thumb">
+          <img src="/static/img/6.jpg" alt="Recipe image for Day 6" loading="lazy" />
+          <div class="day-pill">Day 6</div>
+        </div>
+        <h3 class="title">Ginger Scallion Tofu</h3>
+        <p class="desc">Crispy tofu with ginger scallion oil.</p>
+        <button class="view-btn" type="button" data-view="6">View recipe</button>
+        <div class="result" id="result-6"></div>
+      </section>
+      <section class="card" data-day="7">
+        <div class="thumb">
+          <img src="/static/img/7.jpg" alt="Recipe image for Day 7" loading="lazy" />
+          <div class="day-pill">Day 7</div>
+        </div>
+        <h3 class="title">Beef Pepper Stir-fry</h3>
+        <p class="desc">Tender beef, bell peppers, black pepper sauce.</p>
+        <button class="view-btn" type="button" data-view="7">View recipe</button>
+        <div class="result" id="result-7"></div>
+      </section>
+      <section class="card" data-day="8">
+        <div class="thumb">
+          <img src="/static/img/8.jpg" alt="Recipe image for Day 8" loading="lazy" />
+          <div class="day-pill">Day 8</div>
+        </div>
+        <h3 class="title">Tom Yum Pasta</h3>
+        <p class="desc">Tom yum meets creamy pasta.</p>
+        <button class="view-btn" type="button" data-view="8">View recipe</button>
+        <div class="result" id="result-8"></div>
+      </section>
+      <section class="card" data-day="9">
+        <div class="thumb">
+          <img src="/static/img/9.jpg" alt="Recipe image for Day 9" loading="lazy" />
+          <div class="day-pill">Day 9</div>
+        </div>
+        <h3 class="title">Crispy Chicken Katsu</h3>
+        <p class="desc">Panko fried chicken with sauce.</p>
+        <button class="view-btn" type="button" data-view="9">View recipe</button>
+        <div class="result" id="result-9"></div>
+      </section>
+      <section class="card" data-day="10">
+        <div class="thumb">
+          <img src="/static/img/10.jpg" alt="Recipe image for Day 10" loading="lazy" />
+          <div class="day-pill">Day 10</div>
+        </div>
+        <h3 class="title">Grilled Butter Corn</h3>
+        <p class="desc">Fast snack with grilled butter glaze.</p>
+        <button class="view-btn" type="button" data-view="10">View recipe</button>
+        <div class="result" id="result-10"></div>
+      </section>
+      <section class="card" data-day="11">
+        <div class="thumb">
+          <img src="/static/img/11.jpg" alt="Recipe image for Day 11" loading="lazy" />
+          <div class="day-pill">Day 11</div>
+        </div>
+        <h3 class="title">Kimchi Grilled Cheese</h3>
+        <p class="desc">Melty cheese + tangy kimchi.</p>
+        <button class="view-btn" type="button" data-view="11">View recipe</button>
+        <div class="result" id="result-11"></div>
+      </section>
+      <section class="card" data-day="12">
+        <div class="thumb">
+          <img src="/static/img/12.jpg" alt="Recipe image for Day 12" loading="lazy" />
+          <div class="day-pill">Day 12</div>
+        </div>
+        <h3 class="title">Thai Basil Omelette</h3>
+        <p class="desc">Crispy edges, basil aroma.</p>
+        <button class="view-btn" type="button" data-view="12">View recipe</button>
+        <div class="result" id="result-12"></div>
+      </section>
+      <section class="card" data-day="13">
+        <div class="thumb">
+          <img src="/static/img/13.jpg" alt="Recipe image for Day 13" loading="lazy" />
+          <div class="day-pill">Day 13</div>
+        </div>
+        <h3 class="title">Char Kuey Teow</h3>
+        <p class="desc">Smoky stir-fried flat noodles (Penang style).</p>
+        <button class="view-btn" type="button" data-view="13">View recipe</button>
+        <div class="result" id="result-13"></div>
+      </section>
+      <section class="card" data-day="14">
+        <div class="thumb">
+          <img src="/static/img/14.jpg" alt="Recipe image for Day 14" loading="lazy" />
+          <div class="day-pill">Day 14</div>
+        </div>
+        <h3 class="title">Sardine Curry Puff</h3>
+        <p class="desc">Flaky pastry filled with spicy sardine sambal.</p>
+        <button class="view-btn" type="button" data-view="14">View recipe</button>
+        <div class="result" id="result-14"></div>
+      </section>
+      <section class="card" data-day="15">
+        <div class="thumb">
+          <img src="/static/img/15.jpg" alt="Recipe image for Day 15" loading="lazy" />
+          <div class="day-pill">Day 15</div>
+        </div>
+        <h3 class="title">Tepung Pelita</h3>
+        <p class="desc">Traditional two-layered pandan &amp; coconut custard.</p>
+        <button class="view-btn" type="button" data-view="15">View recipe</button>
+        <div class="result" id="result-15"></div>
+      </section>
+      <section class="card" data-day="16">
+        <div class="thumb">
+          <img src="/static/img/16.jpg" alt="Recipe image for Day 16" loading="lazy" />
+          <div class="day-pill">Day 16</div>
+        </div>
+        <h3 class="title">Salted Egg Chicken</h3>
+        <p class="desc">Creamy salted egg yolk sauce.</p>
+        <button class="view-btn" type="button" data-view="16">View recipe</button>
+        <div class="result" id="result-16"></div>
+      </section>
+      <section class="card" data-day="17">
+        <div class="thumb">
+          <img src="/static/img/17.jpg" alt="Recipe image for Day 17" loading="lazy" />
+          <div class="day-pill">Day 17</div>
+        </div>
+        <h3 class="title">Tuna Mayo Onigiri</h3>
+        <p class="desc">Simple rice ball classic.</p>
+        <button class="view-btn" type="button" data-view="17">View recipe</button>
+        <div class="result" id="result-17"></div>
+      </section>
+      <section class="card" data-day="18">
+        <div class="thumb">
+          <img src="/static/img/18.jpg" alt="Recipe image for Day 18" loading="lazy" />
+          <div class="day-pill">Day 18</div>
+        </div>
+        <h3 class="title">Teriyaki Mushrooms</h3>
+        <p class="desc">Umami bite-sized mushrooms.</p>
+        <button class="view-btn" type="button" data-view="18">View recipe</button>
+        <div class="result" id="result-18"></div>
+      </section>
+      <section class="card" data-day="19">
+        <div class="thumb">
+          <img src="/static/img/19.jpg" alt="Recipe image for Day 19" loading="lazy" />
+          <div class="day-pill">Day 19</div>
+        </div>
+        <h3 class="title">Laksa-ish Noodle Soup</h3>
+        <p class="desc">Shortcut laksa style soup.</p>
+        <button class="view-btn" type="button" data-view="19">View recipe</button>
+        <div class="result" id="result-19"></div>
+      </section>
+      <section class="card" data-day="20">
+        <div class="thumb">
+          <img src="/static/img/20.jpg" alt="Recipe image for Day 20" loading="lazy" />
+          <div class="day-pill">Day 20</div>
+        </div>
+        <h3 class="title">Rojak Buah</h3>
+        <p class="desc">Tangy, spicy Malaysian fruit salad with crunch.</p>
+        <button class="view-btn" type="button" data-view="20">View recipe</button>
+        <div class="result" id="result-20"></div>
+      </section>
+      <section class="card" data-day="21">
+        <div class="thumb">
+          <img src="/static/img/21.jpg" alt="Recipe image for Day 21" loading="lazy" />
+          <div class="day-pill">Day 21</div>
+        </div>
+        <h3 class="title">Butter Chicken Wrap</h3>
+        <p class="desc">Creamy curry in a wrap.</p>
+        <button class="view-btn" type="button" data-view="21">View recipe</button>
+        <div class="result" id="result-21"></div>
+      </section>
+      <section class="card" data-day="22">
+        <div class="thumb">
+          <img src="/static/img/22.jpg" alt="Recipe image for Day 22" loading="lazy" />
+          <div class="day-pill">Day 22</div>
+        </div>
+        <h3 class="title">Crispy Shallot Noodles</h3>
+        <p class="desc">Noodles topped with fried shallots.</p>
+        <button class="view-btn" type="button" data-view="22">View recipe</button>
+        <div class="result" id="result-22"></div>
+      </section>
+      <section class="card" data-day="23">
+        <div class="thumb">
+          <img src="/static/img/23.jpg" alt="Recipe image for Day 23" loading="lazy" />
+          <div class="day-pill">Day 23</div>
+        </div>
+        <h3 class="title">Gochujang Wings</h3>
+        <p class="desc">Sticky spicy Korean-style wings.</p>
+        <button class="view-btn" type="button" data-view="23">View recipe</button>
+        <div class="result" id="result-23"></div>
+      </section>
+      <section class="card" data-day="24">
+        <div class="thumb">
+          <img src="/static/img/24.jpg" alt="Recipe image for Day 24" loading="lazy" />
+          <div class="day-pill">Day 24</div>
+        </div>
+        <h3 class="title">Pesto Ramen</h3>
+        <p class="desc">Weirdly good basil ramen remix.</p>
+        <button class="view-btn" type="button" data-view="24">View recipe</button>
+        <div class="result" id="result-24"></div>
+      </section>
+      <section class="card" data-day="25">
+        <div class="thumb">
+          <img src="/static/img/25.jpg" alt="Recipe image for Day 25" loading="lazy" />
+          <div class="day-pill">Day 25</div>
+        </div>
+        <h3 class="title">Steamed Fish</h3>
+        <p class="desc">Ginger, scallion, soy drizzle.</p>
+        <button class="view-btn" type="button" data-view="25">View recipe</button>
+        <div class="result" id="result-25"></div>
+      </section>
+      <section class="card" data-day="26">
+        <div class="thumb">
+          <img src="/static/img/26.jpg" alt="Recipe image for Day 26" loading="lazy" />
+          <div class="day-pill">Day 26</div>
+        </div>
+        <h3 class="title">Garlic Butter Shrimp</h3>
+        <p class="desc">Fast pan shrimp with garlic.</p>
+        <button class="view-btn" type="button" data-view="26">View recipe</button>
+        <div class="result" id="result-26"></div>
+      </section>
+      <section class="card" data-day="27">
+        <div class="thumb">
+          <img src="/static/img/27.jpg" alt="Recipe image for Day 27" loading="lazy" />
+          <div class="day-pill">Day 27</div>
+        </div>
+        <h3 class="title">Peanut Satay Bowl</h3>
+        <p class="desc">Peanut sauce over chicken + rice.</p>
+        <button class="view-btn" type="button" data-view="27">View recipe</button>
+        <div class="result" id="result-27"></div>
+      </section>
+      <section class="card" data-day="28">
+        <div class="thumb">
+          <img src="/static/img/28.jpg" alt="Recipe image for Day 28" loading="lazy" />
+          <div class="day-pill">Day 28</div>
+        </div>
+        <h3 class="title">Tomato Egg Stir-fry</h3>
+        <p class="desc">Classic comfort dish.</p>
+        <button class="view-btn" type="button" data-view="28">View recipe</button>
+        <div class="result" id="result-28"></div>
+      </section>
+      <section class="card" data-day="29">
+        <div class="thumb">
+          <img src="/static/img/29.jpg" alt="Recipe image for Day 29" loading="lazy" />
+          <div class="day-pill">Day 29</div>
+        </div>
+        <h3 class="title">Soy Sauce Chicken</h3>
+        <p class="desc">Poached in soy aromatics.</p>
+        <button class="view-btn" type="button" data-view="29">View recipe</button>
+        <div class="result" id="result-29"></div>
+      </section>
+      <section class="card locked" data-day="30">
+        <div class="lock-overlay" aria-hidden="true">
+          <div class="lock-box">
+            <strong>LOCKED</strong>
+            <p>Khairul Ameng never released this.</p>
+          </div>
+        </div>
+        <div class="thumb">
+          <img src="/static/img/30.jpg" alt="Recipe image for Day 30" loading="lazy" />
+          <div class="day-pill">Day 30</div>
+        </div>
+        <h3 class="title">???</h3>
+        <p class="desc">Locked.</p>
+        <button class="view-btn" type="button" data-view="30">View recipe</button>
+        <div class="result" id="result-30"></div>
+      </section>
+  </main>
+
+  <footer class="foot">
+    <small>&copy; 2026 Khairul Ameng</small>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
